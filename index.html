@@ -11,11 +11,24 @@
     </head>
 
     <body>
-      <h1> Bienvenue sur mon site de test </h1>
+
+      <div class="parallax-container">
+        <div class="parallax"><img src="img/maxresdefault.jpg"></div>
+      </div>
+
+      <div class="section blue darken-3 white-text">
+        <h1> Bienvenue sur mon site de test </h1>
+        <p> Voici le premier paragraphe pour tester. <br/>
+          J'espère que ce site fonctionne bien.
+        </p>
+        <a href="https://soundcloud.com/neal-acree/arthas-my-son-world-of">
+          <i class="material-icons">library_music</i>
+        </a>
+      </div>
+
 
       <!-- Element Showed -->
       <a id="menu" class="waves-effect waves-light btn btn-floating" ><i class="material-icons">menu</i></a>
-
       <!-- Tap Target Structure -->
       <div class="tap-target" data-target="menu">
         <div class="tap-target-content">
@@ -23,11 +36,13 @@
           <p>A bunch of text</p>
         </div>
       </div>
+
       <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script type="text/text/javascript">
         var elem = document.querySelector('.tap-target');
-        var instance = new M.FeatureDiscovery(elem, options); 
+        var instance = new M.FeatureDiscovery(elem, options);
+        instance.open();
       </script>
     </body>
   </html>
